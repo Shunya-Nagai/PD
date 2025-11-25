@@ -2,63 +2,99 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>条件ページ一覧</title>
+  <title>実験ページ一覧</title>
   <style>
     body {
       font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      max-width: 640px;
+      max-width: 700px;
       margin: 40px auto;
       padding: 0 16px;
-      line-height: 1.8;
+      line-height: 1.7;
+      background: #f5f7fa;
     }
+
     h1 {
-      font-size: 1.3rem;
+      font-size: 1.5rem;
       margin-bottom: 1.5rem;
+      text-align: center;
     }
+
     ul {
       list-style: none;
       padding: 0;
       margin: 0;
     }
-    li + li {
-      margin-top: 0.4rem;
+
+    li {
+      margin-bottom: 12px;
     }
-    a {
+
+    /* ▼ ボタン全体 ▼ */
+    .link-button {
+      display: flex;
+      align-items: center;
+      background: white;
+      border-radius: 12px;
+      padding: 14px 18px;
       text-decoration: none;
-      color: #0066cc;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      transition: 0.2s;
+      border: 1px solid #e3e3e3;
     }
-    a:hover {
-      text-decoration: underline;
+
+    .link-button:hover {
+      background: #eef6ff;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.12);
     }
+
+    /* ▼ 丸数字部分 ▼ */
     .num {
-      display: inline-block;
-      width: 2em;
-      text-align: center;
-      margin-right: 0.4em;
+      background: #007bff;
+      color: #fff;
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1rem;
+      margin-right: 14px;
+      flex-shrink: 0;
     }
+
+    /* ▼ 国名部分 ▼ */
+    .label {
+      font-size: 1.1rem;
+      color: #333;
+    }
+
   </style>
 </head>
 <body>
+
   <h1>実験ページ一覧</h1>
+
   <ul>
-    <li><a href="llb/"><span class="num">①</span>モルディブ</a></li>
-    <li><a href="llw/"><span class="num">②</span>ラオス</a></li>
-    <li><a href="lmb/"><span class="num">③</span>マラウイ</a></li>
-    <li><a href="lmw/"><span class="num">④</span>コスタリカ</a></li>
-    <li><a href="lnb/"><span class="num">⑤</span>ジブチ</a></li>
-    <li><a href="lnw/"><span class="num">⑥</span>リヒテンシュタイン</a></li>
-    <li><a href="mlb/"><span class="num">⑦</span>ニジェール</a></li>
-    <li><a href="mlw/"><span class="num">⑧</span>マリ共和国</a></li>
-    <li><a href="mmb/"><span class="num">⑨</span>アンティグア・バーブーダ</a></li>
-    <li><a href="mmw/"><span class="num">⑩</span>ホンジュラス</a></li>
-    <li><a href="mnb/"><span class="num">⑪</span>ソロモン諸島</a></li>
-    <li><a href="mnw/"><span class="num">⑫</span>イエメン</a></li>
-    <li><a href="slb/"><span class="num">⑬</span>タジキスタン</a></li>
-    <li><a href="slw/"><span class="num">⑭</span>ベナン</a></li>
-    <li><a href="smb/"><span class="num">⑮</span>サンマリノ</a></li>
-    <li><a href="smw/"><span class="num">⑯</span>マーシャル諸島</a></li>
-    <li><a href="snb/"><span class="num">⑰</span>南スーダン</a></li>
-    <li><a href="snw/"><span class="num">⑱</span>エスワティニ</a></li>
+    <li><a class="link-button" href="llb/"><span class="num">①</span><span class="label">モルディブ</span></a></li>
+    <li><a class="link-button" href="llw/"><span class="num">②</span><span class="label">ラオス</span></a></li>
+    <li><a class="link-button" href="lmb/"><span class="num">③</span><span class="label">マラウイ</span></a></li>
+    <li><a class="link-button" href="lmw/"><span class="num">④</span><span class="label">コスタリカ</span></a></li>
+    <li><a class="link-button" href="lnb/"><span class="num">⑤</span><span class="label">ジブチ</span></a></li>
+    <li><a class="link-button" href="lnw/"><span class="num">⑥</span><span class="label">リヒテンシュタイン</span></a></li>
+    <li><a class="link-button" href="mlb/"><span class="num">⑦</span><span class="label">ニジェール</span></a></li>
+    <li><a class="link-button" href="mlw/"><span class="num">⑧</span><span class="label">マリ共和国</span></a></li>
+    <li><a class="link-button" href="mmb/"><span class="num">⑨</span><span class="label">アンティグア・バーブーダ</span></a></li>
+    <li><a class="link-button" href="mmw/"><span class="num">⑩</span><span class="label">ホンジュラス</span></a></li>
+    <li><a class="link-button" href="mnb/"><span class="num">⑪</span><span class="label">ソロモン諸島</span></a></li>
+    <li><a class="link-button" href="mnw/"><span class="num">⑫</span><span class="label">イエメン</span></a></li>
+    <li><a class="link-button" href="slb/"><span class="num">⑬</span><span class="label">タジキスタン</span></a></li>
+    <li><a class="link-button" href="slw/"><span class="num">⑭</span><span class="label">ベナン</span></a></li>
+    <li><a class="link-button" href="smb/"><span class="num">⑮</span><span class="label">サンマリノ</span></a></li>
+    <li><a class="link-button" href="smw/"><span class="num">⑯</span><span class="label">マーシャル諸島</span></a></li>
+    <li><a class="link-button" href="snb/"><span class="num">⑰</span><span class="label">南スーダン</span></a></li>
+    <li><a class="link-button" href="snw/"><span class="num">⑱</span><span class="label">エスワティニ</span></a></li>
   </ul>
+
 </body>
 </html>
