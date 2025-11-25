@@ -1,0 +1,34 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  /*
+     - 背景 w: #ffffff / 文字 #000000
+     - 背景 b: #000000 / 文字 #ffffff
+  */
+  background-color: #000000;
+  color: #ffffff;
+
+  font-family: -apple-system, BlinkMacSystemFont,
+               "Yu Gothic", "YuGothic", "Hiragino Kaku Gothic ProN",
+               "Meiryo", sans-serif;
+
+  /*行間*/
+  line-height: 2;
+}
+
+/* 本文コンテナ（文字サイズだけ条件で変える） */
+.main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+  box-sizing: border-box;
+
+  /* ★ここが条件で変わる部分★
+     文字サイズ：
+       s（小）: 15px
+       m（中）: 25px
+       l（大）: 35px
+  */
+  font-size: 25px;
+}
