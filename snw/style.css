@@ -13,19 +13,21 @@ body {
                "Yu Gothic", "YuGothic", "Hiragino Kaku Gothic ProN",
                "Meiryo", sans-serif;
 
-  /*行間*/
+  /*行間：
+       n（小）: 1.5
+       m（中）: 2
+       l（大）: 2.5
+  */
   line-height: 1.5;
 }
 
-/* 本文コンテナ（文字サイズだけ条件で変える） */
 .main {
   max-width: 800px;
   margin: 0 auto;
   padding: 2rem 1.5rem;
   box-sizing: border-box;
 
-  /* ★ここが条件で変わる部分★
-     文字サイズ：
+  /*文字サイズ：
        s（小）: 15px
        m（中）: 25px
        l（大）: 35px
